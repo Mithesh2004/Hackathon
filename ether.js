@@ -10,7 +10,7 @@ while (window.ethereum == null || window.ethereum == undefined) {
 }
 provider = new ethers.BrowserProvider(window.ethereum);
 signer = await provider.getSigner();
-//console.log(signer)
+
 const balance = await provider.getBalance(signer.address);
 const formattedBalance = ethers.formatEther(balance);
 const accountAddressElement = document.getElementById("accountAddress");
