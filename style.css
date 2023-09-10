@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.home-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.home-elements {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.account-details,
+.balance,
+.stocks-bought {
+  margin: 10px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#portfolio {
+  padding: 20px;
+}
+
+.stock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgb(189, 188, 188);
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: fit-content;
+  padding: 3px;
+  margin: 0;
+  color: rgb(169, 104, 104);
+  background-color: transparent;
+  border: none;
+  opacity: 0.2;
+  font-weight: bold;
+  transition: color 0.15s;
+  overflow-wrap: break-word;
+}
+.close-button:hover {
+  opacity: 1;
+}

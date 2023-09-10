@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Portfolio Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Stock Portfolio Tracker</h1>
+      <button id="addStock">Add Stock</button>
+    </header>
+    <div class="home-page">
+      <div class="account-details home-elements">
+        <p class="title">Account Address</p>
+        <p id="accountAddress">Loading...</p>
+      </div>
+      <div class="balance home-elements">
+        <p class="title">Account Balance(ETH)</p>
+        <p id="accountBalance">Loading...</p>
+      </div>
+      <div class="stocks-bought home-elements">
+        <p class="title">Stocks Owned</p>
+        <p>.....</p>
+      </div>
+    </div>
+    <div id="portfolio"></div>
+
+    <script type="module" src="ether.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
