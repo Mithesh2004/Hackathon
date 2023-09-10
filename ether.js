@@ -10,13 +10,10 @@ while (window.ethereum == null || window.ethereum == undefined) {
   alert("Please install MetaMask");
 }
 provider = new ethers.BrowserProvider(window.ethereum);
-console.log("HI");
 signer = await provider.getSigner();
-console.log(signer);
 //console.log(signer)
 const balance = await provider.getBalance(signer.address);
 const formattedBalance = ethers.formatEther(balance);
-console.log(formattedBalance);
 const accountAddressElement = document.getElementById("accountAddress");
 accountAddressElement.textContent = signer.address;
 
