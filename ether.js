@@ -6,7 +6,6 @@ let provider;
 console.log(window.ethereum);
 
 while (window.ethereum == null || window.ethereum == undefined) {
-  //provider = ethers.getDefaultProvider();
   alert("Please install MetaMask");
 }
 provider = new ethers.BrowserProvider(window.ethereum);
